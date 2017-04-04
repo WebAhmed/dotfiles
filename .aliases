@@ -1,0 +1,54 @@
+# system aliases
+alias del="rm -rf"
+alias task="ps aux | grep"
+alias so='source'
+alias c="clear"
+
+# git aliases
+alias g="git"
+alias gb="git branch"
+alias gbl="git branch -v --all"
+alias gbx="git branch -D"
+alias ga="git add"
+alias gc="git commit -v"
+alias gcm="git commit -m"
+alias gs="git status"
+alias gp="git push"
+alias gd="git diff"
+alias gl="git log"
+alias gf="git fetch"
+alias gpl="git pull"
+alias gco="git checkout"
+alias gcb="git checkout -b"
+alias gla="git log --oneline --decorate --graph --all"
+alias glp="git log --pretty=format:'%C(yellow)%h%C(reset) - %an [%C(green)%ar%C(reset)] %s'"
+alias glog="git log -E -i --grep"
+alias gss="git status --short"
+alias grh="git reset HEAD"
+alias gpr="git pull --rebase"
+alias gau="git add --update"
+alias gfu="git fetch upstream"
+alias grum="git fetch upstream && git rebase upstream/master"
+
+# tmux aliases
+alias tn='tmux new -s'
+alias ta='tmux attach -t'
+alias tls='tmux ls'
+alias tkill='tmux kill-session -t'
+
+# editing configs aliases 
+alias ev='vim ~/.vimrc'
+alias et='vim ~/.tmux.conf'
+alias ez='vim ~/.zshrc'
+alias ep='vim ~/.zpreztorc'
+alias ea='vim ~/.aliases'
+
+# apt-get aliases
+alias supd="sudo apt-get update"
+alias supg="sudo apt-get upgrade"
+
+# rails aliases
+alias fdb="rake db:drop; rake db:create; rake db:migrate; rake db:seed;"
+
+# ksp mono alias
+alias kan="mono ckan.exe"
